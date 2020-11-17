@@ -12,6 +12,7 @@ class AutoTransaction:
         """
         self.email = config['email']
         self.password = config['password']
+        self.user_amount = config['user_amount']
         self.persons = data['persons']
         self.amounts = data['amounts']
         self.driver = webdriver.Chrome(config['driver_path']
@@ -43,7 +44,7 @@ class AutoTransaction:
         self.driver.find_element_by_xpath("//li[@id='add-transaction']/div").click()
         time.sleep(2)
 
-        for _ in range(1):
+        for _ in range(self.user_amount):
             person, iban = self.persons[random.randrange(len(self.persons))][0], self.persons[random.randrange(len(self.persons)+1)][1]
             amount = self.amounts[random.randrange(len(self.amounts))]
 
