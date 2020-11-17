@@ -88,7 +88,7 @@ class AutoTransaction:
 
 if __name__ == '__main__':
 
-    with open('config/config.json') as config_file:
+    with open('config.json') as config_file:
         config = json.load(config_file)
     
     with open('generate_users/user.json') as data_file:
