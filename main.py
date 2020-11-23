@@ -39,7 +39,7 @@ class AutoTransaction:
 
     def new_transaction(self):
 
-        self.driver.find_element_by_link_text("DE00 9999 4000 0000 0025 85").click()
+        self.driver.find_element_by_link_text("DE00 9999 4000 0000 0025 96").click()
         time.sleep(2)
         self.driver.find_element_by_xpath("//li[@id='add-transaction']/div").click()
         time.sleep(2)

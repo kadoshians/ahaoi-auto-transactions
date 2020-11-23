@@ -1,5 +1,6 @@
 {
     "email" : "<email>",
     "password" : "<password>",
-    "driver_path" : "path/for/driver"
+    "driver_path" : "path/for/driver",
+    "user_amount": 100
 }
